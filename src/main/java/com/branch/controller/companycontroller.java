@@ -42,7 +42,7 @@ public class companycontroller {
 	@PutMapping("/company")
 	public companymodel updateCompany(@RequestParam("rollno")long rollno,
 			                          @RequestParam("name") String name){
-		return cs.updateCompany(rollno, company);
+		return cs.updateCompany(rollno, Company);
 }
 
 	@PutMapping("/update-company")
